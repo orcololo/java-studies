@@ -2,7 +2,7 @@
 This is a simples calculator written in Java
 as part of the first Object-Oriented project
 of codecademy.
-Rhian Castro (rhian.w.castro@accenture.com)
+Rhian Castro (rhi.castro@gmail.com)
 GPLv3 - 03/2021
 */
 
