@@ -1,5 +1,5 @@
 /*
-This is a simples calculator written in Java
+This is a simple calculator written in Java
 as part of the first Object-Oriented project
 of codecademy.
 Rhian Castro (rhi.castro@gmail.com)
