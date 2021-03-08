@@ -17,18 +17,24 @@ public class Droid {
     }
 
     public void energyReport() {
-        System.out.println("Battery level: " + batteryLevel);
+        System.out.println(name + " battery level: " + batteryLevel + "W");
     }
 
-    public void energyTransfer(int energyAmount) {
-
+    public void energyTransfer(int energyAmount, Droid droidGiver) {
+        batteryLevel += energyAmount;
+        droidGiver.batteryLevel -= energyAmount;
+        System.out.println(droidGiver.name + " just donated " + energyAmount + " to " + name + ".");
+        energyReport();
+        droidGiver.energyReport();
     }
 
     public static void main(String[] args) {
         Droid myDroid = new Droid("Rudolph");
+        Droid yourDroid = new Droid("C3P0");
         System.out.println(myDroid.toString());
-        System.out.println(myDroid.batteryLevel);
+        myDroid.energyReport();
         myDroid.performTask("dance");
         myDroid.energyReport();
+        myDroid.energyTransfer(30, yourDroid);
     }
 }
